@@ -5,89 +5,393 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raissa's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #0073e6;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #0073e6;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
+<section class="banner">
+    <nav>
+        <div class="navbar" id="navbarlink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#galery">Galery</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
 
-<header>
-    <h1>Raissa's Portfolio</h1>
-    <p>Welcome to my personal portfolio website</p>
-</header>
-
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Raissa, a passionate biomedical engineer with a keen interest in medical device innovation and research. I enjoy solving complex problems and am always eager to learn and grow in the field of biomedical engineering.</p>
+<div class="content">
+    <h1>Lauda Raissa Maheswari</h1>
+    <p>Welcome to my personal portfolio website! Feel free to go to my works, experiences, interests, projects, and skills</p>
+        <div>
+            <a href="mailto:laudaraissa19@gmail.com" target="_blank">
+                <button type="button"><span></span>CONTACT ME</button></a>
+            <a href="C:\Users\ASUS\Downloads\Portofolio website\CV_Lauda Raissa Maheswari - Updated.pdf" target="blank">
+                <button type="button"><span></span>MY CV</button></a>   
+        </div>    
+</div>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <h3>Project 1: EEG Signal Processing</h3>
-    <p>Description: Developed an embedded system using Support Vector Machine (SVM) for stress classification based on EEG signals.</p>
 
-    <h3>Project 2: Medical Imaging System Analysis</h3>
-    <p>Description: Conducted an in-depth analysis of various medical imaging systems to identify key areas for improvement.</p>
 
-    <h3>Project 3: Formula Student Business Strategy</h3>
-    <p>Description: Led the business team in the International Formula Student competition, achieving over 60% social media growth and securing multiple sponsorships.</p>
+<!-- --------ABOUT------- -->
+
+
+<section class="about" id="about">
+    <h1>About Me</h1>
+        <div class="profile">
+            <div class="profile-pic">
+                <img src="raissa.jpeg" alt="Raissa">
+            </div>
+            <div class="profile-info">
+                <h2>Biomedical Engineer</h2>
+                <p>
+                    With a strong foundation in Biomedical Engineering and graduating with honors (CumLaude), 
+                    she is a highly motivated and driven fresh graduate. Her passion for advancing in the fields
+                    of Product Specialist roles, Project Management, and Product Marketing has been a key motivator 
+                    throughout her academic journey. She is eager to apply her knowledge and skills to make a meaningful 
+                    impact in these dynamic and evolving industries.</p>
+                    
+                   <p>She experienced in leading a team, managing projects, and collaborating with stakeholders during her study.
+                    Including competing in international competitions, maintaining partnership engagement, and performing in-depth product knowledge,
+                    I have honed a diverse skill set. </p> 
+                    <p>My stregths include leadership, team management, analytical thinking, strong agility, adaptive, fast learner, and 
+                    resillient, all fueled by a passion for high performance. The integration of my hard and my soft skills forms a unique and 
+                    competitive advantage in my journey. </p> 
+
+                    <p>Feel free to contact me for further information! </p>
+                
+                <ul>
+                    <li><strong>Education :</strong> Universitas Gadjah Mada</li>
+                    <li><strong>GPA      :</strong> 3.54/4.00 (Cumlaude)</strong></li>
+                    <li><strong>Role     :</strong> Product Specialist, Project Management, Product Marketing</li>
+                    <li><strong>Field    :</strong> Engineering, Business, Marketing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="skills-grid">
+                <div class="skill"><i class="fa-solid fa-brain"></i><a href="#projects1">Machine Learning</a></div>
+                <div class="skill"><i class="fa-solid fa-diagram-project"></i><a href="#projects1">Project Management</a></div>
+                <div class="skill"><i class="fa-solid fa-chart-line"></i><a href="#projects1">Market Research</a></div>
+                <div class="skill"><i class="fa-solid fa-code"></i><a href="#projects1">Programming</a></div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- --------RESUME------- -->
+
+<section class="resume" id="resume">
+    <h1>My Resume</h1>
+    <div class="summary">
+        <h1>Summary</h1>
+        <p>Biomedical Engineering graduate passionate about strategic roles, experienced in planning and executing events, 
+            content creation, business, marketing strategy, and leading teams. Possesses strong analytical thinking, creative problem-solving, 
+            and public speaking skills. Contributed and participated in both national and international accomplishments. Proficient in English 
+            and beginner in French. Familiar with machine learning, Python, and data analytics. Hardworker, dedicated, fast learner, and adaptive; 
+            a person you'd want in your team for a successful collaboration.</p>
+    </div>
+
+    <div class="education">
+        <h1>Education</h1>
+
+        <!--UNIVERSITAS GADJAH MADA-->
+        <div class="education-stage">
+            <div class="milestone"></div>
+                <h2>Universitas Gadjah Mada</h2>
+                <h4>Sept 2020 - June 2024</h4>
+        </div>
+            <div class="education-header">
+                <h3>Bachelor Degree in Biomedical Engineering</h3>
+                <p><strong>Thesis title</strong>  : Implementation of the Support Vector 
+                    Machine Algorithm in an Embedded System for Stress 
+                    Classification Based on EEG Signals with OpenBCI</p>
+                <p><strong>Major Relevant Coursework </strong>: Telemedicine, Biomagnetics, C++, Python, Biomechanical,
+                    Image Processing, and Medical Database </p>
+                <p><strong> Minor Relevant Coursework </strong>: Industrial Management, Business Strategy and Development</p>
+                <ul>
+                    <li>Contributed in achieving an award in Indonesia World Records Museum for Formasi Kinetik Blok Tiga
+                         Dimensi dengan Frame terbanyak in PPSMB UGM 2021</li>
+                    <li>Achieved Honours & Award for 3rd winner of Hackathon Research 2021 for Face Detection Application 
+                        using Deep Learning, Issued by Electrical Engineering and Information Technology Department (DTETI), 
+                        Universitas Gadjah Mada.</li>
+                    <li>Achieved Honours & Award for 3rd winner of Procurement Strategy, Issued by Formula Bharat India 6th 
+                        Annual FSEV Concept Challenge 2022 (Pi-EV 2022)</li>
+                    <li>Participated in International Competition FSAE Australasia 2023 for Business Presentation and nominated 
+                        as Best Oversear Participants</li>
+                </ul>
+            </div>
+
+           <!--SMAN 9 BEKASI--> 
+           <div class="education-stage">
+            <div class="milestone"></div>
+                <h2>SMAN 9 Kota Bekasi</h2>
+                <h5>June 2016 - May 2019</h5>
+        </div>
+            <div class="education-header">
+                <h3>Natural Science</h3>
+                <p><strong>Major Relevant Coursework </strong>: Basic Science including physics, chemical, biology, mathematics </p>
+                <p><strong>Minor Relevant Coursework </strong>: Geography, History, and French</p>
+            </div>
+
+
+            <!--SMPN 21 SEMARANG--> 
+           <div class="education-stage">
+            <div class="milestone"></div>
+                <h2>SMPN 21 Semarang</h2>
+                <h5>June 2013 - June 2016</h5>
+        </div>
+            <div class="education-header">
+                <p><strong>National Examination Score </strong>:  
+                    <ul>
+                        <li>Bahasa Indonesia : 90.00</li>
+                        <li>Bahasa Inggris (English): 92.00</li>
+                        <li>Matematika (Mathematics): 97.50</li>
+                        <li>Ilmu Pengetahuan Alam (Science): 85.00 </li>
+                    </ul>
+                
+                </p>
+          
+            </div>
+    </div>
+
+    <div class="professional">
+        <h1>Professional Experiences</h1>
+
+        <!-- EXPERINCES 1 -->
+        <div class="professional-stage">
+            <div class="milestone"></div>
+                <h2>Universitas Gadjah Mada</h2>
+                <h4>Feb 2023 - June 2024</h4>
+        </div>
+
+        <div class="professional-header">
+            <h3>Laboratory Assistant</h3>
+            <ul>
+                <li>Coordinated and supported various research projects in the Biomedical Engineering laboratory, 
+                    focusing on Image Processing and Image Segmentation for sophomore students.</li>
+                <li>Provided technical expertise and guidance to students, particularly in the areas of Image Processing, 
+                    Image Segmentation, Sensors, and Transducers for second-year students.</li>
+                <li>Assessed and evaluated students' final reports related to their practicum, providing constructive feedback 
+                    and communicating results to the relevant lecturers.</li>
+                <li>Assisted a total of more than 90 students, helping them gain practical experience and a deeper understanding 
+                    of complex biomedical engineering concepts.</li>
+            </ul>
+            <p><strong>Soft-Skills Developed</strong>  : Research, Teaching, Communication Skills</p>
+            <p><strong>Hard-Skills Developed</strong>: Python Programming for Image Processing</p>
+        </div>
+
+
+        <!-- EXPERINCES 2 -->
+        <div class="professional-stage">
+            <div class="milestone"></div>
+                <h2>Mindray Indonesia</h2>
+                <h5>Jan 2023 - Feb 2023</h5>
+        </div>
+
+        <div class="professional-header">
+            <h3>Service Intern</h3>
+            <p><strong>After Sales Services and Technical Support</strong></p>
+            <ul>
+                <li><strong>Conducted Product Knowledge Analysis and Technical Troubleshooting:</strong>Engaged in detailed technical analysis of various medical devices to acquire in-depth product knowledge. 
+                    This involved diagnosing and identifying potential technical issues, conducting root cause analysis, and recommending appropriate repair solutions to maintain optimal device functionality. 
+                    Demonstrated the ability to quickly learn and understand the technical specifications of more than six different medical devices within a one-month period, showcasing a strong aptitude for 
+                    technical learning and problem-solving.</li>
+                <li><strong>Collaborated on Technical Upselling Strategies:</strong>Worked alongside a mentor and the sales team to identify and leverage technical upselling opportunities during service interactions. 
+                    This required understanding the technical needs of customers, suggesting upgrades or additional products that would enhance their current medical device setups, and providing detailed technical 
+                    explanations to support sales efforts. Developed and implemented PowerPoint presentations that effectively communicated complex technical information, helping to accelerate the after-sales process 
+                    and improve customer satisfaction.</li>
+                <li><strong>Performed Hands-On Technical Support and Maintenance:</strong>Provided hands-on technical support by assisting in the installation, calibration, and maintenance of medical devices. Ensured 
+                    that all devices operated within manufacturer specifications by conducting routine checks and troubleshooting technical issues as they arose. This proactive approach helped minimize downtime and 
+                    ensured that healthcare providers could rely on the equipment for accurate and efficient patient care.</li>
+                <li><strong>Showcased Technical Communication and Presentation Skills:</strong>Delivered presentations that included both company profile and comprehensive technical knowledge of specific medical devices. 
+                    These presentations were conducted in front of the Board of Directors, mentors, and Human Resources Department, demonstrating the ability to convey complex technical concepts in a clear and understandable manner. 
+                    Successfully achieved the internship program's goals by bridging the gap between technical expertise and effective communication, facilitating informed decision-making among stakeholders.</li>
+            </ul>
+            <p><strong>Soft-Skills Developed</strong>  : Presentation Skills, Negotiation Skills, Interpersonal Skills, and problem-solving</p>
+            <p><strong>Hard-Skills Developed</strong>: Technical Knowledge of Medical Devices, Troubleshooting</p>
+        </div>
+
+
+        <!-- EXPERINCES 3 -->
+        <div class="professional-stage">
+            <div class="milestone"></div>
+                <h2>Globy.id</h2>
+                <h6>Sep 2021 - Dec 2021</h6>
+        </div>
+
+        <div class="professional-header">
+            <h3>External Relations and Engagement Intern</h3>
+            <p><strong>Partnership engagement and Public Relations</strong></p>
+            <ul>
+                <li><strong>Partnership Project Management:</strong>Successfully managed multiple partnership projects from initiation to completion. Responsibilities included coordinating project timelines, tasks, 
+                    and deliverables to ensure that partnership goals were met. Maintained regular communication with partners to provide updates and address any issues or concerns that arose during project execution.</li>
+                <li><strong>Creation of Product Introduction Materials:</strong>Developed engaging and informative product introduction materials tailored to potential and existing partners. These materials included presentations, 
+                    brochures, and other marketing collateral designed to showcase the company’s products, services, and value propositions effectively. The aim was to educate partners about the offerings and encourage their involvement.</li>
+                <li><strong>Organized Collaborative Events:</strong>Developed effective strategies to improve partnership engagement, leveraging insights from internal data to optimize approaches. Successfully organized and executed three events 
+                    in partnership with stakeholders, aimed at strengthening relationships and showcasing products.</li>
+            </ul>
+            <p><strong>Soft-Skills Developed</strong>  : Communication Skills, Collaboration and Teamwork, Project Management, and Problem-solving</p>
+            <p><strong>Hard-Skills Developed</strong>: Marketing and Strategic Planning, Event Planning</p>
+        </div>
+
+    </div>   
+    
+    
+    
+    <div class="organizational">
+        <h1>Organizational Experiences</h1>
+    
+            <!-- Organization 1 -->
+            <div class="organizational-stage">
+                <div class="milestone"></div>
+                    <h2>KKN-PPM Universitas Gadjah Mada</h2>
+                    <h4>Jan 2023 - Aug 2023</h4>
+            </div>
+    
+            <div class="organizational-header">
+                <h3>Sponsorship and Public Relations</h3>
+                <ul>
+                    <li><strong>Secured Sponsorship Agreements:</strong>Managed and executed sponsorship initiatives while cultivating strong relationships with external partners and fostering positive brand 
+                        recognition and securing vital financial support based on agreement on MoU (Memorandum of understanding)</li>
+                    <li><strong>Cultivated Relationships with External Partners: </strong> secured sponsorship agreements with Petrokimia Gresik, Tempo Scan Group, 
+                        PT Pelabuhan Indonesia (Pelindo), PT Pertamina Kilang Balikpapan, etc</li>
+                    <li><strong>Developed and Maintained Memoranda of Understanding (MoU):</strong> Drafted and managed the execution of Memoranda of Understanding (MoU) 
+                        to formalize partnerships. Ensured that all sponsorship agreements were clearly defined, documented, and adhered to, providing a 
+                        framework for successful collaboration.</li>
+                </ul>
+                <p><strong>Soft-Skills Developed</strong>  : Research, Teaching, Communication Skills</p>
+                <p><strong>Hard-Skills Developed</strong>: Python Programming for Image Processing</p>
+            </div>
+
+            <!-- Organization 2 -->
+            <div class="organizational-stage">
+                <div class="milestone"></div>
+                    <h2>Arjuna EV UGM</h2>
+                    <h5>Nov 2021 - Dec 2023</h5>
+            </div>
+    
+            <div class="organizational-header">
+                <h3>Operational Department</h3>
+                <p><strong>Brand marketing strategy, partnership engagement, procurement, public relations,
+                    and operational improvement for Formula Car Team </strong></p>
+                <ul>
+                    <li>Developed marketing strategy based on market research to raise brand awareness and team persona in social media including the ideation, 
+                        content writing, timeline, and platform; produced more than 30 contents i.e Instastory, Reels, IG Feeds, and TikTok videos and gained 60% followers 
+                        increment on Instagram</li>
+                    <li> Executed comprehensive marketing campaign by attended car exhibitions to drive financial support for team’s operational;
+                        achieving more than 10 sponsors for the team i.e Garuda Indonesia, Loctite, Pertamina, etc</li>
+                    <li>Managed relationships with sponsors, ensured the contracts were successfully fulfilled and maintained sponsor company satisfaction with team performance; 
+                        reporting monthly update on team’s progress</li>
+                    <li>Coordinated with a lot of stakeholders such as lecturers, sponsors, partnerships, other teams, and vendors to assess potential offers
+                         that could be provided to sponsors; drafted 3 proposals with more than 5 offers each </li>
+                    <li>Collaborated with the procurement team to provide raw materials for the manufacturing process from the sponsors, vendors, etc</li>
+                </ul>
+                <p><strong>Led the team for business plan ideation, financial analysis, and cost manufacture efficiency report for International Formula Car Competition in Australia 2023</strong></p>
+                <ul>
+                    <li>Analyzed business model for Formula Car Manufacturing Company, including market segmentation, financial plan and operational costs by utilizing Microsoft Excel Formulas; 
+                        Best Overseas Participant with score 61.14/75.00</li>
+                    <li>Managed projects including the shipping of the car, distribution, supply chain management, and procurement for the while process of the manufacturing projects</li> 
+                </ul>
+                <p><strong>Soft-Skills Developed</strong>  : Leadership, Negotiation, Communication Skills</p>
+                <p><strong>Hard-Skills Developed</strong>: Procurement strategy, brand marketing strategy</p>
+            </div>
+
+            <!-- Organization 3 -->
+            <div class="organizational-stage">
+                <div class="milestone"></div>
+                    <h6>National Electrical Power System Competition (NESCO)</h6>
+                    <j>Oct 2021 - Jul 2022</j>
+            </div>
+    
+            <div class="organizational-header">
+                <h3>Project Coordinator</h3>
+                <ul>
+                    <li><strong>Led Event Planning and Execution:</strong>Spearheaded the planning and execution of all aspects of the conference and paper competition, 
+                        working collaboratively with stakeholders, included overseeing rehearsals, content creation, and publication, leading to the development of over 10 pieces of engaging content across various 
+                        platforms such as TikTok, Instagram Reels, the Opening Show, and the Closing Show.</li>
+                    <li><strong>Developed and Monitored Project Timelines: </strong> Created detailed project timelines for all divisions to ensure that tasks were clearly outlined and completed on schedule,
+                        monitored progress closely, making adjustments as needed to address any delays or obstacles, and proactive approach ensured that all project needs were met effectively and that the event proceeded smoothly.</li>
+                </ul>
+                <p><strong>Soft-Skills Developed</strong>  : Coordinating, Collaboration, Communication Skills</p>
+                <p><strong>Hard-Skills Developed</strong>: Project Planning, Timeline management</p>
+            </div>
+
+
+
+            <!-- Organization 4 -->
+            <div class="organizational-stage">
+                <div class="milestone"></div>
+                    <h6>PPSMB PALAPA Universitas Gadjah Mada</h6>
+                    <h7>Mar 2021 - Aug 2021</h7>
+            </div>
+
+            <div class="organizational-header">
+                <h3>Creative Event Staff</h3>
+                <ul>
+                    <li><strong>Developed and Produced Engaging Pre-Event and Main Event Content:</strong> Played a key role in creating compelling content for both pre-event promotions and the main event, involved brainstorming and developing 
+                        creative concepts that would resonate with the freshman audience, scripting content, coordinating video production, and overseeing editing processes. Successfully produced five video contents for the PPSMB UGM YouTube channel, 
+                        with one video achieving a high level of engagement, reaching up to <strong>160,000 viewers</strong>, highlighting the effectiveness of the content strategy.</li>
+                    <li><strong>Coordinated Orientation Activities and Managed Co-Facilitators:</strong> Responsible of managing and facilitating co-facilitators throughout the four days of orientation activities and coordinating with co-facilitators to ensure 
+                        they were well-prepared and that all activities ran smoothly. Addressed any technical issues promptly and effectively to minimize disruptions and ensured that all events adhered to the planned schedule, providing a seamless experience for the new students.</li>
+                    <li><strong>Achieved Recognition for Outstanding Content Creation: </strong> Contributed to the production of a standout video titled "Formasi Rubik Karsa," which was recognized with the prestigious REKOR MURI award. This accolade underscored the creativity and innovation 
+                        brought to the event's content, showcasing the ability to deliver high-quality, impactful visual experiences that resonate with large audiences.</li>
+                </ul>
+                <p><strong>Soft-Skills Developed</strong>  : Content Creation, Collaboration, Communication Skills</p>
+                <p><strong>Hard-Skills Developed</strong>: Adobe Illustrator, Canva, Microsoft Excel</p>
+            </div>
+
+    </div>        
+
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:raissa@example.com">raissa@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/raissa" target="_blank">Raissa's LinkedIn</a></p>
-</section>
 
-<footer>
-    <p>&copy; 2024 Raissa. All rights reserved.</p>
-</footer>
+<!-- PROJECTSSSSSS -->
+
+<!-- <section class="projects" id="projects">
+    <h1>My Projects</h1> -->
+    <!-- <div class="projects-grid">
+        <a href="web_design.html" class="portfolio-item">
+            <img src="C:\Users\ASUS\Downloads\Portofolio website\1.png" alt="Web Design">
+            <div class="overlay">Face App</div>
+        </a> -->
+        <!-- <a href="ipal_modular.html" class="portfolio-item">
+            <img src="ipal_modular.jpg" alt="Instalasi Pengolahan Air Limbah (IPAL) Modular">
+            <div class="overlay">IPAL Modular</div>
+        </a>
+        <a href="esp32.html" class="portfolio-item">
+            <img src="esp32.jpg" alt="ESP32 Project">
+            <div class="overlay">ESP32 Project</div>
+        </a> -->
+        <!-- Add more portfolio items as needed -->
+    <!-- </div>
+</section> -->
+
+
 
 </body>
 </html>
+
+
+<script>
+
+    var navbarlink = document.getElementById("navbarlink");
+    function showMenu(){
+        navbarlink.style.right = "0";
+    }
+    function hideMenu(){
+        navbarlink.style.right = "-200px";
+    }
+
+</script>
+
+<!-- </body>
+</html> -->
