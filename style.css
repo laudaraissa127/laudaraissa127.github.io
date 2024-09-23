@@ -378,7 +378,7 @@ nav .fa{
     top: 200px;
     left: 30px;
     width: 92%;
-    height: 538%;
+    height: 540%;
     background-color:rgba(12, 12, 12, 0.8);
     border-radius: 15px;
     z-index: -1;
@@ -774,11 +774,11 @@ nav .fa{
 
 /* PAGE PROJECTS */
 
-.projects{
-    color: #fff; /* White text color */
+/* .projects{
+    color: #fff;
     padding: 50px;
     padding-left: 50px;
-    padding-top: 130px;
+    padding-top: 3420px;
     position: relative;
     font-family: Arial, sans-serif;
     transition: scroll;
@@ -800,21 +800,21 @@ nav .fa{
 .projects::before{
     content: '';
     position: absolute;
-    top: 500px;
+    top: 3488px;
     left: 30px;
     width: 92%;
-    height: 100%;
+    height: 80%;
     background-color:rgba(12, 12, 12, 0.8);
     border-radius: 15px;
     z-index: -1;
-}
+} */
 
 /* .portfolio h2 {
     color: #32CD32;
     margin-bottom: 30px;
 } */
 
-.projects-grid {
+/* .projects-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -823,16 +823,16 @@ nav .fa{
 
 .projects-item {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 50px;
+    height: 40px;
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .projects-item img {
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 20%;
     object-fit: cover;
 }
 
@@ -840,7 +840,7 @@ nav .fa{
     transform: scale(1.05);
 }
 
-/* .overlay {
+.overlay {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -855,3 +855,80 @@ nav .fa{
 .projects-item:hover .overlay {
     opacity: 1;
 } */
+
+/* GALLERY */
+
+.gallery{
+    color: #fff;
+    padding: 50px;
+    padding-left: 50px;
+    padding-top: 3420px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    transition: scroll;
+    max-width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+}
+
+.gallery h1 {
+    text-transform: uppercase;
+    font-size: 1.75em;
+    padding-left: 5px;
+    margin-top: 100px;
+    border-bottom: 2px solid #5681b3da;
+    display: flex;
+    width:92%;
+}
+
+.gallery::before{
+    content: '';
+    position: absolute;
+    top: 3488px;
+    left: 30px;
+    width: 92%;
+    height: 28%;
+    background-color:rgba(12, 12, 12, 0.8);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Adds a zoom effect when hovering */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
